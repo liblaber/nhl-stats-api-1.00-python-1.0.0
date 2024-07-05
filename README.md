@@ -31,7 +31,7 @@ This SDK is compatible with the following versions: `Python >= 3.7`
 To get started with the SDK, we recommend installing using `pip`:
 
 ```bash
-pip install nhl_stats
+pip install nhl-stats-client
 ```
 
 ## Services
