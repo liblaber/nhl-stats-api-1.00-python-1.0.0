@@ -1,0 +1,170 @@
+{
+  "liblabVersion": "2.1.18",
+  "date": "2024-07-05T22:21:16.992Z",
+  "config": {
+    "apiId": 371,
+    "baseUrl": "https://api-web.nhle.com/",
+    "sdkName": "nhl_stats",
+    "sdkVersion": "1.0.0",
+    "liblabVersion": "2",
+    "deliveryMethods": ["zip"],
+    "languages": ["python"],
+    "apiVersion": "1.0.0",
+    "apiName": "nhl_stats",
+    "specFilePath": "./nhl.yaml",
+    "auth": [],
+    "languageOptions": {
+      "csharp": {
+        "packageId": "",
+        "githubRepoName": "",
+        "ignoreFiles": [],
+        "liblabVersion": "2",
+        "sdkVersion": "1.0.0"
+      },
+      "go": {
+        "goModuleName": "github.com/swagger-api/swagger-petstore",
+        "githubRepoName": "",
+        "ignoreFiles": [],
+        "liblabVersion": "2",
+        "sdkVersion": "1.0.0"
+      },
+      "python": {
+        "alwaysInitializeOptionals": false,
+        "pypiPackageName": "nhl-stats-client",
+        "githubRepoName": "",
+        "ignoreFiles": [],
+        "liblabVersion": "2",
+        "sdkVersion": "1.0.0"
+      },
+      "typescript": {
+        "bundle": false,
+        "exportClassDefault": false,
+        "httpClient": "axios",
+        "npmName": "",
+        "npmOrg": "",
+        "githubRepoName": "",
+        "ignoreFiles": [],
+        "liblabVersion": "2",
+        "sdkVersion": "1.0.0"
+      }
+    },
+    "publishing": {
+      "githubOrg": ""
+    },
+    "devContainer": false,
+    "generateEnv": true,
+    "includeOptionalSnippetParameters": true,
+    "inferServiceNames": false,
+    "injectedModels": [],
+    "license": {
+      "type": "MIT",
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT",
+      "path": "MIT.ejs"
+    },
+    "responseHeaders": false,
+    "retry": {
+      "enabled": true,
+      "maxAttempts": 3,
+      "retryDelay": 150,
+      "maxDelay": 5000,
+      "retryDelayJitter": 50,
+      "backOffFactor": 2,
+      "httpCodesToRetry": [408, 429, 500, 502, 503, 504],
+      "httpMethodsToRetry": ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"]
+    },
+    "multiTenant": true,
+    "hooksLocation": {
+      "bucketKey": "13001/hooks.zip",
+      "bucketName": "dev-liblab-api-stack-hooks"
+    },
+    "specUrl": "https://dev-liblab-api-stack-specs.s3.us-east-1.amazonaws.com/371/open-api-spec.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIA3C2RXH7MWUCMN7ON%2F20240705%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240705T222116Z&X-Amz-Expires=43200&X-Amz-Signature=c47ac6095bbc426acfdfa91eb8352f5a6a9129147f6c7926f9b5d0fc40dc2979&X-Amz-SignedHeaders=host&x-id=GetObject",
+    "workflow": null,
+    "includeWatermark": true,
+    "alwaysInitializeOptionals": false,
+    "pypiPackageName": "nhl-stats-client",
+    "githubRepoName": "",
+    "ignoreFiles": [],
+    "language": "python",
+    "deliveryMethod": "zip",
+    "hooks": {
+      "enabled": true,
+      "sourceDir": "/tmp/resources/hooks"
+    },
+    "usesFormData": false,
+    "authentication": {},
+    "environmentVariables": [],
+    "fileOutput": "/tmp",
+    "httpLibrary": {
+      "name": "axios",
+      "packages": {
+        "axios": "^1.6.8"
+      },
+      "languages": ["typescript"]
+    },
+    "customQueries": {
+      "paths": [],
+      "rawQueries": [],
+      "queriesData": []
+    }
+  },
+  "files": [
+    "src/nhl_stats/models/base.py",
+    "src/nhl_stats/models/utils/json_map.py",
+    "src/nhl_stats/models/__init__.py",
+    "src/nhl_stats/services/__init__.py",
+    "src/nhl_stats/__init__.py",
+    "src/nhl_stats/net/__init__.py",
+    "src/nhl_stats/net/headers/__init__.py",
+    "src/nhl_stats/net/transport/__init__.py",
+    "src/nhl_stats/hooks/__init__.py",
+    "src/nhl_stats/net/environment/__init__.py",
+    "src/nhl_stats/net/request_chain/__init__.py",
+    "src/nhl_stats/net/request_chain/handlers/__init__.py",
+    "src/nhl_stats/net/transport/request.py",
+    "src/nhl_stats/net/transport/response.py",
+    "src/nhl_stats/net/transport/request_error.py",
+    "src/nhl_stats/sdk.py",
+    "src/nhl_stats/net/transport/serializer.py",
+    "src/nhl_stats/services/utils/validator.py",
+    "src/nhl_stats/services/utils/base_service.py",
+    "pyproject.toml",
+    ".gitignore",
+    "src/nhl_stats/models/utils/cast_models.py",
+    "src/nhl_stats/net/transport/utils.py",
+    "src/nhl_stats/hooks/hook.py",
+    "install.sh",
+    "install.cmd",
+    "examples/install.sh",
+    "examples/install.cmd",
+    "src/nhl_stats/net/headers/base_header.py",
+    "src/nhl_stats/net/environment/environment.py",
+    "src/nhl_stats/net/request_chain/request_chain.py",
+    "src/nhl_stats/net/request_chain/handlers/base_handler.py",
+    "src/nhl_stats/net/request_chain/handlers/http_handler.py",
+    "src/nhl_stats/net/request_chain/handlers/hook_handler.py",
+    "src/nhl_stats/net/request_chain/handlers/retry_handler.py",
+    "examples/sample.py",
+    ".env.example",
+    "/examples/.env.example",
+    "src/nhl_stats/services/utils/default_headers.py",
+    "./LICENSE",
+    "src/nhl_stats/services/players.py",
+    "src/nhl_stats/services/draft.py",
+    "documentation/services/PlayersService.md",
+    "documentation/services/DraftService.md",
+    "src/nhl_stats/services/season.py",
+    "src/nhl_stats/services/game.py",
+    "documentation/services/SeasonService.md",
+    "documentation/services/GameService.md",
+    "documentation/services/GoaliesService.md",
+    "documentation/services/TeamsService.md",
+    "src/nhl_stats/services/goalies.py",
+    "src/nhl_stats/services/teams.py",
+    "documentation/services/SkatersService.md",
+    "src/nhl_stats/services/skaters.py",
+    "documentation/services/MiscellaneousService.md",
+    "README.md",
+    "src/nhl_stats/services/miscellaneous.py"
+  ]
+}
